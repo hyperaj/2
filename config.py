@@ -7,31 +7,31 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps.
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "23017054"))
+API_HASH = getenv("API_HASH", "4978a4886dfda8b752205fbb854b5f91")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6057396949:AAFqboh4svUOQP06RDORanI_zP5i6XTFEh0")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","jarvis2O")
+OWNER_USERNAME = getenv("OWNER_USERNAME","Li_xiaoyu_fan")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "Annie_X_music_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Pikachoo_X_Bot")
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "˹🇳𝐎𝐓𝐓𝐘 ✘ ˹🇲𝚄𝚂𝙸𝙲˼")
+BOT_NAME = getenv("BOT_NAME" , "⌜ • 𝐂꯭ᴀ꯭ᴛ꯭ʏ꯭ ꯭𝐗 ꯭ ʟ꯭ᴀ꯭ᴋᴄ꯭ʜ꯭𝐔 • ⌟")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "musicXannie")
-EVALOP = list(map(int, getenv("EVALOP", "6797202080").split()))
+ASSUSERNAME = getenv("ASSUSERNAME" , "caty_lakchu_assistant")
+EVALOP = list(map(int, getenv("EVALOP").split()))
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb://clve73lfu001ha4me1al6gw90:UTfT7DjJGjwyvbdXaM1hDrVj@104.251.218.202:9013/?readPreference=primary&ssl=false")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002024677280))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002066328009))
 
 # ------------------------------------------------
 GPT_API = getenv("GPT_API")
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6788284558))
+OWNER_ID = int(getenv("OWNER_ID", 59168592568))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -48,8 +48,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NEXT_TOPPPER")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NEXT_TOPPPER")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TeamHyperNetworks")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Team_Hypers_Networks")
 
 
 # Maximum Limit Allowed for users to save playlists on bot's server
@@ -59,7 +59,7 @@ SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "2500"))
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "9000"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION", "9999999"))
 SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "9999999"))
@@ -75,12 +75,12 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
 
 # Telegram audio and video file size limit (in bytes)
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "9242880000"))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "9242880000"))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 # Ge@STRINGSEASO_NBOT2 session from @STRINGSEASO_NBOT
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC6kfsAPCvIOumtc5CFWzct2WqM8DiIiZSLe6qertI31pIjFO7kTvGIRzGFyT32ts2zJXpjqLgNwbuB1omq4lDGzdK-kPSEofPvfOaYzBTV7PJzSkxyJolDvRYo4OkiSRdhk8BanoEEwYJ4EGS3yGqT3LN-4xnYVUUTjR63Ou6leZAIt9Lwn1MZrYO2wkJG6LFlOjNF8yhvug_fJ-QPmNCrSCEHSlSj1oi3XDxPGmNGK6jQ8f-Echa34kOEoDeD70rQZ92OmGb_KrLR3n5DIq5NSEjVdyedjNehArQhK_iWjfAMjfdfuHmpaRPKkOtN7ML8yO-oT9ERsPtxGr6K0xG_acCTuAAAAAFwPJTEAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
